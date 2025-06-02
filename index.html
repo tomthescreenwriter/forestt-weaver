@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forestt Weaver</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0e0e0e, #2a2a2a);
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header, section {
+      position: relative;
+    }
+    header {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 60px 20px;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #00ffaa;
+    }
+    header p {
+      font-style: italic;
+      margin: 10px 0 30px;
+    }
+    .cta-buttons a {
+      margin: 10px;
+      padding: 10px 20px;
+      background: #00ffaa;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section h2 {
+      color: #00ffaa;
+    }
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #00ffaa;
+      padding-left: 15px;
+      margin: 20px 0;
+    }
+    .features li, .testimonials li {
+      margin: 10px 0;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .ui-overlay, .ui-glitch, .ui-data-stream, .svg-wireframe, .terminal-readout, .video-mock, .vhs-scanlines, .grid-pattern, .background-visual {
+      position: absolute;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .vhs-scanlines {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.02) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      z-index: 2;
+    }
+    .grid-pattern {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(#222 1px, transparent 1px), linear-gradient(to right, #222 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.1;
+      z-index: 0;
+    }
+    .background-visual {
+      top: 20%;
+      left: 10%;
+      width: 300px;
+      height: auto;
+      opacity: 0.2;
+    }
+    .terminal-readout {
+      top: 20px;
+      right: 10px;
+      width: 250px;
+      height: 200px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #00ff00;
+      font-family: monospace;
+      font-size: 0.75em;
+      padding: 10px;
+      overflow: auto;
+      border: 1px solid #00ffaa;
+    }
+    .video-mock {
+      bottom: 40px;
+      right: 20px;
+      width: 200px;
+      height: 112px;
+      background: #000;
+      border: 2px solid #00ffaa;
+    }
+    @keyframes pulseBox {
+      0% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.05); opacity: 0.3; }
+      100% { transform: scale(1); opacity: 0.7; }
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      45%, 55% { opacity: 0.2; }
+    }
+    @keyframes glitchMove {
+      0% { transform: translate(0, 0) rotate(-3deg); }
+      50% { transform: translate(3px, -2px) rotate(-3deg); }
+      100% { transform: translate(0, 0) rotate(-3deg); }
+    }
+    @keyframes scrollText {
+      0% { transform: translateY(100%); }
+      100% { transform: translateY(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="vhs-scanlines"></div>
+  <div class="grid-pattern"></div>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Glitch_computer_screen.svg/1280px-Glitch_computer_screen.svg.png" class="background-visual" alt="Glitch Visual">
+  <nav style="background:#0e0e0e; text-align:center; padding:10px; border-bottom:1px solid #333; z-index: 3; position: relative;">
+  <a href="technology.html" style="margin: 0 15px; color:#00ffaa; text-decoration:none; font-weight:bold;">Technology</a>
+  <a href="labs.html" style="margin: 0 15px; color:#00ffaa; text-decoration:none; font-weight:bold;">Labs</a>
+  <a href="demo.html" style="margin: 0 15px; color:#00ffaa; text-decoration:none; font-weight:bold;">Demo</a>
+  <a href="team.html" style="margin: 0 15px; color:#00ffaa; text-decoration:none; font-weight:bold;">Team</a>
+  <a href="docs.html" style="margin: 0 15px; color:#00ffaa; text-decoration:none; font-weight:bold;">Docs</a>
+  <a href="faq.html" style="margin: 0 15px; color:#00ffaa; text-decoration:none; font-weight:bold;">FAQ</a>
+</nav>
+<header>
+    <h1>Forestt Weaver</h1>
+    <p>Turn the heat up on forced vector rendering.</p>
+    <div class="cta-buttons">
+      <a href="#demo">Watch the Demo</a>
+      <a href="#download">Try the Beta</a>
+      <a href="#license">Request a License</a>
+    </div>
+</header>
+<!-- Rest of page content would go here... -->
+</body>
+</html>
